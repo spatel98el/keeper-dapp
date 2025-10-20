@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "keeper-dapp-backend": {
+      "main": "src/keeper-dapp-backend/main.mo",
+      "type": "motoko"
+    },
+    "keeper-dapp-frontend": {
+      "dependencies": [
+        "keeper-dapp-backend"
+      ],
+      "source": [
+        "src/keeper-dapp-frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "keeper-dapp-frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
