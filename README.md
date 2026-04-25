@@ -18,6 +18,11 @@ cd keeper-dapp/
 dfx help
 dfx canister --help
 ```
+## To create project with react BE
+- ```dfx new <name>```
+- choose BE as 'motoko'
+- choose FE as 'react'
+- thats it, write your react code in Apps.jsx, styling in index.scss!
 
 ## Running the project locally
 
