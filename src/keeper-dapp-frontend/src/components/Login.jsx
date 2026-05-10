@@ -22,7 +22,7 @@ function  Login(props) {
             // create a new user, with sample note
             // later add some id validation
             console.log(`creating new user ${receivedUserName}`);
-            keeper_dapp_backend.addNote(receivedUserName, "Welcome!", "This is your first note!");
+            keeper_dapp_backend.addNote(receivedUserName, `Welcome ${receivedUserName}!`, "This is your first note!");
             setNewUser(receivedUserName);
         }
         props.onValidate(receivedUserName);

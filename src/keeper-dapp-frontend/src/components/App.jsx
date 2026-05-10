@@ -80,7 +80,7 @@ function App() {
 
     return (
         <div>
-        <Header onLogout={handleLogout} isValid = {userValidated}/>
+        <Header onLogout={handleLogout} isValid = {userValidated} userName={currentUser}/>
         {userValidated ? (
             <div>
 
